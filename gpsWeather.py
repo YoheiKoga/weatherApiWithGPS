@@ -29,7 +29,7 @@ while True:
 
 		str = gpsData.split(",")
 
-		if str[3] != "":
+		if str[3] != "" and str[5] != "":
 			lat_60decimal = float(str[3])
 			lng_60decimal = float(str[5])
 			lat = int(lat_60decimal/100)+(lat_60decimal/100 - int(lat_60decimal/100))*100/60
